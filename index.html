@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Management</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Buyers, Products, and Transactions</h1>
+        
+        <section id="buyers">
+            <h2>Buyers</h2>
+            <input type="text" id="buyerName" placeholder="Name">
+            <input type="text" id="buyerEmail" placeholder="Email">
+            <input type="text" id="buyerPhone" placeholder="Phone">
+            <input type="text" id="buyerAddress" placeholder="Address">
+            <button id="addBuyer">Add Buyer</button>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Phone</th>
+                        <th>Address</th>
+                    </tr>
+                </thead>
+                <tbody id="buyerTable"></tbody>
+            </table>
+        </section>
+
+        <section id="products">
+            <h2>Products</h2>
+            <input type="text" id="productName" placeholder="Product Name">
+            <input type="text" id="productCategory" placeholder="Category">
+            <input type="text" id="productPrice" placeholder="Price">
+            <input type="text" id="productStock" placeholder="Stock Availability">
+            <button id="addProduct">Add Product</button>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Category</th>
+                        <th>Price</th>
+                        <th>Stock</th>
+                    </tr>
+                </thead>
+                <tbody id="productTable"></tbody>
+            </table>
+        </section>
+
+        <section id="transactions">
+            <h2>Transactions</h2>
+            <input type="text" id="transactionBuyer" placeholder="Buyer Name">
+            <input type="text" id="transactionProduct" placeholder="Product Name">
+            <input type="date" id="transactionDate" placeholder="Transaction Date">
+            <input type="text" id="transactionAmount" placeholder="Total Amount">
+            <button id="addTransaction">Add Transaction</button>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Buyer</th>
+                        <th>Product</th>
+                        <th>Date</th>
+                        <th>Amount</th>
+                    </tr>
+                </thead>
+                <tbody id="transactionTable"></tbody>
+            </table>
+        </section>
+    </div>
+</body>
+</html>
